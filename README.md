@@ -30,3 +30,10 @@ Build your Flask image:
                                      DEPLOYMENT
                                      
                    COMMAND: kubectl rollout restart deployment  (After changing the image)
+                   
+                   
+                   
+Note: Always set the 
+ 
+                    imagePullPolicy: Always 
+                   
