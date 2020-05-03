@@ -1,0 +1,54 @@
+
+                                      
+
+                                   How to add SSL on LoadBalancer in Digital Ocean
+                                   ------------------------------------------------
+
+
+    step #1:
+
+      Go to Networking in left panel and open loadbalancers setting
+
+
+   step #2:
+
+      Go to the Forwarding rules and add two rules
+
+
+
+ Rule#1
+    
+    Protocol =HTTP
+   
+    Port= 80
+
+    Certificate = None
+
+   ---> Protocol= HTTP
+       
+        Port=31105  (Nodeport)
+
+
+   
+
+Rule#2
+    
+    Protocol =HTTPs
+   
+    Port= 443
+
+    Certificate = resumas  (add yur ssl certificate)
+
+   ---> Protocol= HTTP
+       
+        Port=31105  (Nodeport)
+
+
+
+      Step #3
+
+
+    Go to SSL (in settings of Loadbalancer) and redirect HTTP to HTTPS
+
+
+
