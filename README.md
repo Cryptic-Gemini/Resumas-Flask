@@ -6,9 +6,14 @@ REF: https://hub.docker.com/r/tiangolo/uwsgi-nginx-flask/
 
 
 You should now have a directory structure like:
+
+
 .
 ├── app
-│   └── main.py
+
+│  
+    └── main.py
+
 └── Dockerfile
 
 Go to the project directory (in where your Dockerfile is, containing your app directory)
